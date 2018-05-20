@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PopupAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_night" translatesAutoresizingMaskIntoConstraints="NO" id="HxP-aG-A7o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0os-jn-7wK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nny-Af-l2p">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfQ-Rt-ZTT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tl3-yo-Ved">
+                                <rect key="frame" x="50" y="74" width="275" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1FL-us-pyY"/>
+                                    <constraint firstAttribute="height" constant="60" id="j4x-Ra-MRC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="29"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Ad to cart ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTwocartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGh-OR-gzE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6kD-UO-nNF"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Jx-8q-c7Z"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="centerY" secondItem="HxP-aG-A7o" secondAttribute="centerY" id="8fM-xI-4lc"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="centerX" secondItem="HxP-aG-A7o" secondAttribute="centerX" id="IvK-ar-3o2"/>
+                            <constraint firstItem="HxP-aG-A7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XPd-3E-rUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HxP-aG-A7o" secondAttribute="trailing" id="anc-A4-gUv"/>
+                            <constraint firstAttribute="bottom" secondItem="0os-jn-7wK" secondAttribute="bottom" id="dwe-BH-qDn"/>
+                            <constraint firstItem="HxP-aG-A7o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fjR-3X-GXa"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fkx-hT-GxA"/>
+                            <constraint firstAttribute="bottom" secondItem="HxP-aG-A7o" secondAttribute="bottom" id="gXW-qX-UgS"/>
+                            <constraint firstItem="HxP-aG-A7o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="knS-U1-4c2"/>
+                            <constraint firstItem="Tl3-yo-Ved" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="sOa-Dr-kAs"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="height" secondItem="HxP-aG-A7o" secondAttribute="height" id="smE-WW-gKM"/>
+                            <constraint firstItem="Tl3-yo-Ved" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="v37-LM-eUT"/>
+                            <constraint firstItem="0os-jn-7wK" firstAttribute="width" secondItem="HxP-aG-A7o" secondAttribute="width" id="yQ1-WJ-GCG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tl3-yo-Ved" secondAttribute="trailing" constant="50" id="ze6-25-R5Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addTocartBtn" destination="Tl3-yo-Ved" id="fMq-XB-ZqC"/>
+                        <outlet property="finalView" destination="Mw3-Ic-rq0" id="xr9-OR-Z1V"/>
+                        <outlet property="sureBtn" destination="VWp-Dv-3Tx" id="to9-NP-d6Z"/>
+                        <outlet property="visualEffect" destination="0os-jn-7wK" id="gRg-Fh-1oW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Mw3-Ic-rq0">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="150"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWp-Dv-3Tx">
+                            <rect key="frame" x="60" y="45" width="150" height="60"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="5Me-M2-bjp"/>
+                                <constraint firstAttribute="height" constant="60" id="PtZ-h5-IN6"/>
+                                <constraint firstAttribute="width" constant="150" id="bIx-zt-BFG"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="iPW-Id-cHH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                            <state key="normal" title="Sure">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="surePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4C-BS-87u"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.80797838184931503" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VWp-Dv-3Tx" firstAttribute="centerX" secondItem="Mw3-Ic-rq0" secondAttribute="centerX" id="96y-qn-pRL"/>
+                        <constraint firstItem="VWp-Dv-3Tx" firstAttribute="centerY" secondItem="Mw3-Ic-rq0" secondAttribute="centerY" id="yyl-W5-kwc"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="J0C-9e-Yhy"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star_night" width="818" height="500"/>
+    </resources>
+</document>
